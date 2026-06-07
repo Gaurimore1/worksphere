@@ -7,7 +7,7 @@ A full-stack employee management platform with three layers:
 - **Mobile** — Flutter (Dart) with Riverpod + Dio
 
 ---
-https://github.com/user-attachments/assets/6852b023-ae62-487b-9d83-cfa0e9595f79
+https://github.com/user-attachments/assets/6e54772a-4f09-49e1-a1c1-c6d91bf4da90
 ## Features
 
 ### Web Dashboard (Admin / HR)
@@ -270,10 +270,11 @@ pip install -r requirements.txt
 Edit `backend/.env`:
 
 ```env
-DATABASE_URL=postgresql+asyncpg://postgres:<your_password>@localhost:5432/eems
-SECRET_KEY=any_random_secret_string
+DATABASE_URL=postgresql+asyncpg://postgres:yourpassword@localhost:5432/eems
+REDIS_URL=redis://localhost:6379/0
+SECRET_KEY=change-me-in-production-use-a-long-random-string
 ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
+ACCESS_TOKEN_EXPIRE_MINUTES=15
 REFRESH_TOKEN_EXPIRE_DAYS=7
 
 # Optional — required only for AI features
